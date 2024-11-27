@@ -99,12 +99,24 @@
   }
 /* jouw code */
 
-header a svg{
-	width: 16px;
-	height: 16px;
+a{
+	text-decoration: none;
+	color: white;
 }
 
-header a svg:first-of-type{
-	width: 109px;
-	height: 19px;
+header{
+	background-image:url(/images/MOOOI_Experimental-Method-001-Horizontal.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+}
+
+div:first-of-type{
+	display: flex;
+	justify-content: center	;
+}
+
+div a{
+	
 }
