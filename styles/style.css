@@ -31,13 +31,6 @@
 
 
 @font-face {
-	font-family: 'GillSans'; 
-	src: url(https://www.moooi.com/_next/static/media/d525ead9d15d3121-s.p.woff2);
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-  }
-@font-face {
 	font-family: 'Poppins-Klaviyo-Hosted'; 
 	src: url(https://static.klaviyo.com/onsite/hosted-fonts/Poppins/latin/poppins_latin_italic_400.woff2);
 	font-weight: 400;
@@ -105,6 +98,12 @@ body, html{
 	padding: 0;
 	margin: 0;
 }
+
+section {
+    width: 100%;
+}
+
+
 a{
 	text-decoration: none;
 	color: white;
@@ -128,12 +127,12 @@ h1{
 
 h2{
 	color: white;
-	font-family: 'GillSans';
+	font-family: 'Gill Sans';
 	font-size: 14px;
 	font-style: normal;
 	text-transform: uppercase;
 	font-feature-settings: "ss01";
-	font-weight: 400;
+	font-weight: 200;
 	line-height: 1.1;
 	letter-spacing: .1em;
 	text-align: center;
@@ -168,17 +167,41 @@ button{
 	height: 2.5em;
 	color: #1f1f1f;
 	letter-spacing: -.02em;
-	transition: var(--color-background) .2s cubic-bezier(cubic-bezier(0.445, 0.05, 0.55, 0.95)), var(--color-text) .2s cubic-bezier(cubic-bezier(0.445, 0.05, 0.55, 0.95));
+	transition: 0.4s;
+	margin-top: 20px;
+}
+
+button:hover{
+	background-color: #DEDEDE;
+}
+
+button:active{
+	color: white;
+	background-color: black;
 }
 
 header{
 	background-image:url(../images/moooi-header.png);
-	background-size: 1700px;
-	height: 830px;
+	background-size: 1400px;
+	height: 667px;
 	background-position: center;
 	background-color: #111;
 	display: flex;
 	flex-wrap: wrap;
+}
+
+nav{
+	position: fixed;
+}
+
+header nav button img{
+	height: 84px;
+	width: 84px;
+	position: absolute;
+}
+
+header nav button{
+	all: unset;
 }
 
 div:first-of-type{
@@ -238,103 +261,126 @@ main section{
 	background-color: white;
 }
 
+main section:nth-of-type(1) h2{
+	color: #1f1f1f;
+	font-size: 13px;
+	font-weight: 700;
+	font-family: 'Gill Sans';
+	font-feature-settings: 'ss01';
+	line-height: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: .06em;
+
+}
 
 main section ul {
     display: flex;
-    flex-wrap: nowrap; /* Allows items to wrap into two rows */
+    flex-wrap: nowrap;
     list-style-type: none;
-    justify-content: flex-start; /* Aligns items to the start of the scrollable area */
-    overflow-x: auto; /* Enables horizontal scrolling */
-    gap: 20px; /* Adds consistent spacing between items */
-    height: 200px; /* Matches the height for two rows of items */
-    padding: 10px 20px; /* Adds padding on the sides for visual balance */
-    scroll-behavior: smooth; /* Enables smooth horizontal scrolling */
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 20px; 
+    height: 200px; 
+    padding: 10px 20px;
+    scroll-behavior: smooth;
 	box-sizing: border-box;
 }
 
 main section ul li {
     background-color: #f8f6f1;
-    flex: 0 0 160px; /* Width of each item for consistent sizing */
-    height: 160px; /* Matches image size for a square look */
+    flex: 0 0 160px;
+    height: 160px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Ensures alignment at the top */
+    justify-content: center;
     align-items: center;
 	text-align: center;
-    box-sizing: border-box; /* Ensures padding/margin don’t affect size */
-    cursor: pointer; /* Adds interactivity like Moooi's */
+    box-sizing: border-box;
 	margin: 10px 0;
 }
 
 main section ul li img {
-    width: 140px; /* Slightly smaller than the container for padding */
-    height: auto; /* Keeps the aspect ratio */
-    margin-bottom: 10px; /* Adds space below the image */
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 main section ul li a {
     text-align: center;
     color: #1f1f1f;
-    font-size: 14px; /* Adjusts font size for better readability */
-    text-decoration: none; /* Removes underlines for a cleaner look */
-    line-height: 1.2; /* Adds spacing between text lines */
-    font-family: 'SangBleuCORRECT', sans-serif; /* Matches Moooi's clean font style */ /* Adds slight boldness */
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 1.2;
+    font-family: 'SangBleuCORRECT', sans-serif;
 
 }
 
-main section ul::-webkit-scrollbar {
-    height: 8px; /* Slim scrollbar for a modern look */
+main section:nth-of-type(2){
+	background-color: #f3f3f3;
 }
 
-main section ul::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 10px;
+main section:nth-of-type(2) h1{
+	color: #1f1f1f;
 }
 
-main section ul::-webkit-scrollbar-track {
-    background: #f8f6f1;
+main section:nth-of-type(2) h2{
+	color: #1f1f1f;
 }
 
-main {
-    overflow: hidden; /* Ensures the horizontal scrolling doesn't cause vertical overflow */
+main section:nth-of-type(2) h3{
+	color: #1f1f1f;
 }
 
-section {
-    width: 100%;
+main section:nth-of-type(2) img{
+	width: 266px;
+	height: 278px;
+	margin-bottom: 20px;
+	margin-top: 50px;
 }
 
-/* main section ul{
+main section{
 	display: flex;
-	list-style-type: none;
-	justify-content: space-between;
 	flex-direction: column;
 	align-items: center;
-	overflow-x: scroll;
-	white-space: nowrap;
-	flex-wrap: wrap;
-	height: 200px;
 }
 
-main section ul li{
-	background-color: #f8f6f1;
+main section:nth-of-type(2) h1{
+	width: 80%;
+}
+
+main section a{
+	color: #1f1f1f;
+	font-family: 'SangBleuCORRECT';
+	margin-bottom: 20px;
+	text-decoration: underline;
+	text-underline-offset: 4px;
+	font-weight: 500;
+	line-height: 2em;
+	height: 2.5em;
+}
+
+main section:nth-of-type(3){
+	background-color: #2f313a;
+	display: flex;
 	flex-direction: column;
-	margin-top: 40px;
-	width: 100px;
-	height: 100px;
+	align-items: center;
+
 }
 
-
-main section ul li img{
-	width: 100px;
-	height: 100px;
+main section:nth-of-type(3) img{
+	width: 266px;
+	height: 278px;
+	margin-bottom: 20px;
+	margin-top: 50px;
 }
 
-main section ul li a{
-	color: #1f1f1f;
-	background-color: #f8f6f1;
-	
+main section:nth-of-type(3) h1{
+	width: 80%;
 }
 
-main section ul li figcaption{
-	color: #1f1f1f;
-} */
+main section:nth-of-type(3) a{
+	color: white;
+	margin-bottom: 80px;
+}
+
+main section:nth-of-type(4)
