@@ -39,12 +39,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.moooi.com/nl-nl/product/menagerie-of-extinct-animals-kimono 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Homepagina
+  <img src="readme-images/screenshot2.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Productpagina 
+  <img src="readme-images/screenshot1.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -96,20 +96,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  |  Reuben        | Rens               | Luka         | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Flexbox hulp   | Hoe krijg ik mijn  | juiste plekken | en dan ik dat    |
+  | Horizontal     | navbar doorzichtig | sections of  | dit wil ik zeker |
+  |scroll lukt niet|                    | divjes       | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Volgende week vooraf even zitten
+  - Grid oefenen
+
 
 </details>
 
