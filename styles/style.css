@@ -174,17 +174,16 @@ nav .menubutton {
 
 nav form{
 	position: absolute;
-	top: 0;
+	margin-top: 10px;
 	display: flex;
 	flex-direction: row;
-	flex-shrink: 0;
-	align-items: stretch;
+	justify-content: space-around;
 	height: 2.55em;
+	width: 100%;
 }
 
 nav form label{
 	display: flex;
-	flex-grow: 1;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -194,14 +193,19 @@ nav form label svg{
 	height: auto;
 	margin: 3px 2.2222222222vw 0;
 	display: block;
-	flex-shrink: 0;
+	filter: invert(100);
 }
 
 nav form button{
 	padding: 0;
 	width: 1.3em;
 	margin: 1px 13px 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: row-reverse;
 }
+
+
 
 header nav div:nth-of-type(2){
 	position: absolute;
@@ -209,16 +213,24 @@ header nav div:nth-of-type(2){
     background: linear-gradient(270deg,#21212199 14.44%,#46454399 93.61%),#000;
 	border-radius: 8px;
 	box-shadow: 6px 4px 11px #00000040,inset -2px -2px 2px #00000040,inset -1px -1px .5px #00000030;
+	translate: 0 150%;
 	transition: translate .3s;
 	display: flex;
 	flex-direction: column;
-	margin-left: 30px;
-	max-width: 350px;
-	overflow: auto;
+	align-items: center;
+	left: 30px;
+	width: 315px;
+	margin-top: 100px;
+}
+
+header nav div:nth-of-type(2) button{
+	display: flex;
+	margin-bottom: 10px;
 }
 
 nav button:first-of-type svg{
 	width: 15px;
+	left: 10px;
 }
 
 nav form label input{
@@ -238,6 +250,8 @@ nav form label input{
 nav ul{
 	list-style-type: none;
 	text-align: center;
+	padding: 0;
+	margin-top: 60px;
 }
 
 nav ul li:nth-of-type(1), li:nth-of-type(2), li:nth-of-type(3),  a{
@@ -321,7 +335,7 @@ header nav button img{
 
 }	
 
-header nav button p{
+header nav div:first-of-type button p{
 	font-family: 'SangBleuCORRECT';
 	position: absolute;
 	display: flex;
@@ -333,6 +347,20 @@ header nav button p{
 	text-transform: uppercase;
 	letter-spacing: .1em;
 }
+
+nav div button{
+	text-align: center;
+}
+
+nav div:nth-of-type(2) button p{
+	display: flex;
+	margin: 0px;
+	width: 90px;
+}
+
+nav div button:first-of-type svg{
+	filter: invert(100);
+} 
 
 header nav button{
 	all: unset;
@@ -380,12 +408,12 @@ div a:nth-of-type(4){
 	margin-top: -6px;
 }
 
-div a:first-of-type{
+.buttons a:first-of-type{
 	margin-right: 60px;
 	margin-left: 20px;
 }
 
-div a:last-of-type{
+.buttons a:last-of-type{
 	margin-right: 20px;
 }
 
