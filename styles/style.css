@@ -131,6 +131,18 @@ h1{
 
 h2{
 	color: white;
+	font-weight: 550;
+	font-size: 38px;
+	font-family: 'SangBleuCORRECT';
+	text-align: center;
+	line-height: 1.2;
+	letter-spacing: -.02em;
+	font-style:normal;
+	font-feature-settings: "ss01";
+}
+
+h3{
+	color: white;
 	font-family: 'Gill Sans';
 	font-size: 14px;
 	font-style: normal;
@@ -142,7 +154,7 @@ h2{
 	text-align: center;
 }
 
-h3{
+h4{
 	color: white;
 	text-align: center;
 }
@@ -158,11 +170,18 @@ p{
 	width: 330px;
 }
 
-nav{
-	display: flex;
+button:focus,
+a:focus {
+    outline: 2px solid #000;
+    outline-offset: 2px;
 }
 
-nav .menubutton {
+nav{
+	display: flex;
+	position: fixed;
+}
+
+header nav div:first-of-type{
 	position: fixed;
 	bottom: 0;
 	width: 375px;
@@ -214,13 +233,19 @@ header nav div:nth-of-type(2){
 	border-radius: 8px;
 	box-shadow: 6px 4px 11px #00000040,inset -2px -2px 2px #00000040,inset -1px -1px .5px #00000030;
 	translate: 0 150%;
-	transition: translate .3s;
+	transition: translate .4s, opacity .15s ease-in-out;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	left: 30px;
 	width: 315px;
 	margin-top: 100px;
+	opacity: 0%;
+}
+
+header nav div:nth-of-type(2).toonMenu{
+	translate: 0% 0%;
+	opacity: 100%;
 }
 
 header nav div:nth-of-type(2) button{
@@ -275,9 +300,7 @@ nav ul li:nth-of-type(4), li:nth-of-type(5), li:nth-of-type(6), li:nth-of-type(7
 	padding-top: 1px;
 }
 
-nav.toonMenu{
-	translate: 0% 0%;
-}
+
 
 nav ul li{
 	color: white;
@@ -309,7 +332,7 @@ button:active{
 	background-color: black;
 }
 
-.menubutton button:hover{
+header nav div:first-of-type button:hover{
 	background-color: transparent;
 }
 
@@ -491,15 +514,15 @@ main section:nth-of-type(2){
 	background-color: #f3f3f3;
 }
 
-main section:nth-of-type(2) h1{
-	color: #1f1f1f;
-}
-
 main section:nth-of-type(2) h2{
 	color: #1f1f1f;
 }
 
 main section:nth-of-type(2) h3{
+	color: #1f1f1f;
+}
+
+main section:nth-of-type(2) h4{
 	color: #1f1f1f;
 }
 
@@ -516,12 +539,11 @@ main section{
 	align-items: center;
 }
 
-main section:nth-of-type(2) h1{
+main section:nth-of-type(2) h2{
 	width: 80%;
 }
 
 main section a{
-	color: #1f1f1f;
 	font-family: 'SangBleuCORRECT';
 	margin-bottom: 20px;
 	text-decoration: underline;
@@ -529,6 +551,7 @@ main section a{
 	font-weight: 500;
 	line-height: 2em;
 	height: 2.5em;
+	font-size: 16px;
 }
 
 main section:nth-of-type(3){
@@ -546,8 +569,9 @@ main section:nth-of-type(3) img{
 	margin-top: 50px;
 }
 
-main section:nth-of-type(3) h1{
+main section:nth-of-type(3) h2{
 	width: 80%;
+	color: white;
 }
 
 main section:nth-of-type(3) a{
@@ -556,5 +580,36 @@ main section:nth-of-type(3) a{
 }
 
 main section:nth-of-type(4){
-	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-image: url(../images/moooi-ripples.png);
+	background-size: 200%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 500px;
+}
+
+main section:nth-of-type(4) h3, h2, p, a{
+	color:#000000;
+}
+
+main section:nth-of-type(5){
+	background-color: #2f313a;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+main section:nth-of-type(5) img{
+	width: 266px;
+	height: 278px;
+	margin-bottom: 20px;
+	margin-top: 50px;
+}
+
+main section:nth-of-type(4) h3, h2, p, a{
+	color: white;
 }
